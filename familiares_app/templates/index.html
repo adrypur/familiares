@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    Familiares APP
+    {%for familiar in queryset%}
+    <p>nombre: {{familiar.nombre}}</p>
+    <p>edad: {{familiar.edad}}</p>
+    <p>nacimiento: {{familiar.nacimiento}}</p>
+    <hr>
+    {%endfor%}
 </body>
 </html>
